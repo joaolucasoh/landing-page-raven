@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#F5C400"/>
+      <stop offset="1" stop-color="#FFD54A"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="url(#g)" />
+  <!-- abstract raven head: simple geometric beak + eye -->
+  <path d="M20 36c4-6 12-10 22-8 0 0-6 6-8 10-2 4-6 6-10 6-6 0-8-8-4-8z" fill="#0B0B0B" />
+  <circle cx="36" cy="28" r="2" fill="#0B0B0B" />
+</svg>
