@@ -7,9 +7,9 @@ export default function Fit(){
   const points = t('fit.bad') || []
 
   return (
-    <section id="fit" className="py-16 px-6">
+    <section id="fit" className="pt-8 pb-12 px-6">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-6">
-        <article className="rounded-2xl border border-zinc-800 bg-zinc-950 p-8">
+        <article className="rounded-2xl border border-zinc-800 bg-zinc-950 p-8 text-center">
           <h4 className="text-2xl font-bold text-white">{t('fit.goodTitle')}</h4>
           <div className="mt-5 space-y-4 text-zinc-300 leading-relaxed">
             {quotes.map((text, i) => (
@@ -18,9 +18,9 @@ export default function Fit(){
           </div>
         </article>
 
-        <article className="rounded-2xl border border-zinc-800 bg-black/50 p-8">
+        <article className="rounded-2xl border border-zinc-800 bg-black/50 p-8 text-center">
           <h4 className="text-2xl font-bold text-white">{t('fit.badTitle')}</h4>
-          <ul className="mt-5 space-y-3 text-zinc-300">
+          <ul className="mt-5 space-y-3 text-zinc-300 max-w-lg mx-auto text-left">
             {points.map((text, i) => (
               <li key={i} className="flex gap-3">
                 <span className="mt-2 w-2 h-2 rounded-full bg-raven-yellow" />

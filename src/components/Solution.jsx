@@ -7,9 +7,9 @@ export default function Solution(){
   const bullets = t('solution.bullets') || []
 
   return (
-    <section className="py-16 px-6 bg-black/30">
+    <section className="pt-8 pb-12 px-6 bg-black/30">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
-        <div>
+        <div className="text-center lg:text-left">
           <h3 className="text-3xl md:text-4xl font-bold text-white">{t('solution.title')}</h3>
           <p className="mt-4 text-zinc-300 max-w-xl">{t('solution.subtitle')}</p>
         </div>

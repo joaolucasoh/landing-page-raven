@@ -7,12 +7,12 @@ export default function LeadCapture(){
   const cases = t('lead.cases') || []
 
   return (
-    <section id="checklist" className="py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="checklist" className="pt-8 pb-10 px-6">
+      <div className="max-w-6xl mx-auto text-center">
         <h3 className="text-3xl md:text-4xl font-bold text-white">{t('lead.title')}</h3>
         <p className="mt-4 text-zinc-300">{t('lead.subtitle')}</p>
 
-        <div className="mt-10 grid md:grid-cols-3 gap-6">
+        <div className="mt-12 grid md:grid-cols-3 gap-6">
           {cases.map((item, i) => (
             <motion.article
               key={i}
@@ -20,7 +20,7 @@ export default function LeadCapture(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6"
+              className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6 text-center"
             >
               <div className="text-xs uppercase tracking-wide font-bold text-raven-yellow">{item.client}</div>
               <p className="mt-3 text-zinc-300 leading-relaxed">{item.summary}</p>
@@ -28,7 +28,7 @@ export default function LeadCapture(){
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-between gap-4 flex-wrap">
+        <div className="mt-14 flex items-center justify-center gap-4 flex-wrap">
           <button className="rounded-full bg-raven-yellow text-black font-semibold px-6 py-3 hover:bg-raven-yellow-2 transition">
             {t('lead.button')}
           </button>

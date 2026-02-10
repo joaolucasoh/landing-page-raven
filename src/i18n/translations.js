@@ -1,247 +1,211 @@
 const translations = {
   pt: {
     nav: {
-      services: 'Servicos QA',
-      work: 'Abordagem',
-      checklist: 'Cenários',
-      book: 'Agendar diagnóstico de QA'
+      services: 'Maturidade',
+      checklist: 'Impacto',
+      work: 'Modelo',
+      book: 'Agendar diagnóstico'
     },
     hero: {
-      badge: 'Quality Engineering • Test Automation • CI/CD',
-      headline: 'Qualidade de Software para Web, Mobile e API com foco em previsibilidade.',
-      sub: 'Estruturamos a estratégia de testes, automação e melhoria de processo para reduzir incidentes e aumentar confiança em produção.',
+      badge: 'Quality Engineering para times que já entregam em produção',
+      headline: 'Menos risco em produção. Mais previsibilidade em cada release.',
+      sub: 'A Raven Tech estrutura qualidade como um sistema contínuo, do planejamento ao deploy.',
       primaryCta: 'Agendar diagnóstico',
-      secondaryCta: 'Ver serviços de QA',
       highlights: ['Web', 'Mobile', 'API']
     },
     problems: {
-      title: 'Nossas frentes de atuação em qualidade',
-      subtitle: 'Atuamos da estrategia a execução para evoluir maturidade de testes sem burocracia.',
+      title: 'Qualidade não é fase. É sistema de decisão.',
+      subtitle: 'Quando a maturidade sobe, o time previne incidentes antes de eles acontecerem.',
+      cta: 'Ver onde geramos impacto',
       items: [
         {
-          title: 'Estratégia de testes e pirâmide',
-          desc: 'Definimos cobertura por camada (unit, integração, API e E2E), critérios de risco e plano de regresão.'
+          title: 'Risco antes de cobertura',
+          desc: 'Priorizamos o que pode afetar o negócio, não o que é apenas simples de testar.'
         },
         {
-          title: 'Automacao de testes',
-          desc: 'Implementamos automacao robusta para web, mobile e API com manutencao sustentavel e feedback rapido.'
+          title: 'Confiabilidade antes de volume',
+          desc: 'Menos testes frágeis e mais sinais sólidos para aprovar releases com segurança.'
         },
         {
-          title: 'Melhoria de processo e CI/CD',
-          desc: 'Conectamos testes ao pipeline com gates de qualidade, observabilidade e indicadores para release seguro.'
+          title: 'Qualidade como responsabilidade do time',
+          desc: 'Qualidade deixa de ser um gargalo isolado e vira uma prática consistente de engenharia.'
         }
       ]
     },
-    solution: {
-      title: 'Expertise tecnica aplicada ao ciclo completo de QA',
-      subtitle: 'Da descoberta de risco aos checks automatizados em pipeline, com foco em impacto real no produto.',
-      bullets: [
-        'Modelagem de estrategia de testes orientada a risco',
-        'Testes manuais exploratorios e regressao estruturada',
-        'Automacao de testes web, mobile e API',
-        'Integracao de suites em CI/CD com quality gates'
-      ]
-    },
     services: {
-      title: 'Servicos especializados em qualidade de software',
-      subtitle: 'Combinamos engenharia de testes e melhoria operacional para acelerar entrega com seguranca.',
+      title: 'Contextos em que normalmente entramos',
+      subtitle: 'Não operamos como um catálogo de QA. Entramos quando a qualidade vira limite para escalar.',
+      cta: 'Quero avaliar meu cenário',
       cards: [
         {
-          title: 'Testes manuais e exploratorios',
-          desc: 'Planejamento e execucao de cenarios criticos, validacao funcional e cobertura orientada por risco.',
-          cta: 'Quero estruturar'
+          title: 'Produto em escala com regressão crescente',
+          desc: 'Reduzimos retrabalho e estabilizamos o ciclo de release com critérios mais claros.'
         },
         {
-          title: 'Test automation',
-          desc: 'Desenho e implementacao de framework de automacao para web, mobile e API com foco em confiabilidade.',
-          cta: 'Quero automatizar'
+          title: 'Releases frequentes com rollback recorrente',
+          desc: 'Criamos gates de confiança para publicar com menos surpresas em produção.'
         },
         {
-          title: 'Processos QA e CI/CD',
-          desc: 'Evolucao de fluxo de qualidade com metricas, quality gates e padroes para releases consistentes.',
-          cta: 'Quero evoluir processo'
+          title: 'Times distribuídos sem padrão comum',
+          desc: 'Alinhamos critérios técnicos e o fluxo de validação entre squads.'
         }
       ]
     },
     work: {
-      title: 'Como trabalhamos em projetos de QA',
-      subtitle: 'Abordagem pratica, incremental e alinhada ao contexto tecnico do seu produto.',
+      title: 'Modelo de atuação da Raven Tech',
+      subtitle: 'Direto, sênior e orientado a resultado mensurável.',
+      cta: 'Falar com especialista',
       points: [
-        'Assessment inicial de riscos e gargalos de qualidade',
-        'Roadmap de melhoria com ganhos de curto prazo',
-        'Execucao com transferencia de conhecimento para o time',
-        'Acompanhamento continuo por indicadores de qualidade'
-      ],
-      stats: [
-        { value: 'Web', label: 'Testes E2E e componentes' },
-        { value: 'Mobile', label: 'Fluxos criticos e regressao' },
-        { value: 'API', label: 'Contrato, integracao e carga' }
-      ]
-    },
-    lead: {
-      title: 'Cenarios onde geramos mais impacto',
-      subtitle: 'Exemplos comuns de desafios que resolvemos em operacoes de tecnologia.',
-      button: 'Quero avaliar meu cenario',
-      disclaimer: 'Mapeamos seu contexto e indicamos um plano de acao de QA.',
-      cases: [
         {
-          client: 'Produto web em crescimento',
-          summary: 'Reducao de regressao manual com automacao progressiva dos fluxos de maior risco.'
+          title: 'Diagnóstico objetivo de riscos e gargalos',
+          desc: 'Mapeamos os principais riscos técnicos e de processo que impactam a produção, priorizando o que realmente afeta o negócio e a entrega.'
         },
         {
-          client: 'App mobile com releases frequentes',
-          summary: 'Estruturacao de suite de testes e checklist de release para diminuir falhas em producao.'
+          title: 'Plano de 90 dias com prioridades claras',
+          desc: 'Definimos um roadmap enxuto com ações de curto prazo que geram impacto mensurável sem travar o fluxo do time.'
         },
         {
-          client: 'Plataforma API-first',
-          summary: 'Validacao de contrato e integracao em pipeline para reduzir quebra entre servicos.'
+          title: 'Execução junto ao time, sem dependência artificial',
+          desc: 'Atuamos lado a lado com o time, estruturando qualidade de forma sustentável e transferindo conhecimento desde o início.'
+        },
+        {
+          title: 'Métricas de confiança para acompanhar a evolução',
+          desc: 'Acompanhamos a evolução da qualidade com indicadores claros que suportam decisões de release e melhoria contínua.'
         }
       ]
     },
-    fit: {
-      goodTitle: 'Resultados que buscamos',
-      badTitle: 'Quando faz mais sentido',
-      good: [
-        'Menos incidentes em producao e maior confianca no deploy.',
-        'Feedback mais rapido para desenvolvimento com testes realmente uteis.'
-      ],
-      bad: [
-        'Times que precisam estruturar QA sem travar velocidade de entrega.',
-        'Produtos que exigem cobertura consistente em web, mobile e API.'
-      ]
-    },
     final: {
-      headline: 'Vamos evoluir sua qualidade de software?',
-      sub: 'Compartilhe seu contexto e montamos um plano de QA com automacao, processo e CI/CD alinhados ao seu produto.',
-      cta: 'Solicitar diagnostico',
-      calendlyPlaceholder: 'Retorno inicial em ate 1 dia util',
+      headline: 'Vamos tornar sua entrega mais previsível',
+      sub: 'Compartilhe seu contexto e retornamos com um plano inicial de evolução de qualidade.',
+      cta: 'Solicitar diagnóstico',
+      calendlyPlaceholder: 'Resposta inicial em até 1 dia útil.',
+      calendly: {
+        button: 'Agendar conversa (30 min)',
+        secondary: 'Prefere não agendar uma call agora? Envie seu contexto por escrito.',
+        modalTitle: 'Diagnóstico Raven Tech (30 min)',
+        url: 'https://calendly.com'
+      },
+      backToTop: 'Voltar ao topo',
+      form: {
+        name: 'Nome',
+        email: 'E-mail',
+        company: 'Empresa',
+        message: 'Contexto atual e principal risco de qualidade'
+      },
+      labels: {
+        email: 'E-mail',
+        phone: 'Telefone',
+        coverage: 'Cobertura'
+      },
       details: {
-        email: 'contato@raventech.com',
+        email: 'hello@ravenqe.io',
         phone: '(11) 98803-4411',
-        location: 'Atendimento remoto para todo o Brasil'
+        location: 'Atendimento remoto para times distribuídos'
       }
     }
   },
   en: {
     nav: {
-      services: 'QA Services',
-      work: 'Approach',
-      checklist: 'Scenarios',
-      book: 'Book QA Assessment'
+      services: 'Maturity',
+      checklist: 'Impact',
+      work: 'Operating Model',
+      book: 'Book an assessment'
     },
     hero: {
-      badge: 'Quality Engineering • Test Automation • CI/CD',
-      headline: 'Software quality for web, mobile, and API with predictable delivery.',
-      sub: 'We design test strategy, automation, and process improvements to reduce incidents and increase production confidence.',
-      primaryCta: 'Book assessment',
-      secondaryCta: 'See QA services',
+      badge: 'Quality Engineering for teams already shipping to production',
+      headline: 'Lower production risk. Predictable releases.',
+      sub: 'Raven Tech builds quality as an operating system across your delivery flow.',
+      primaryCta: 'Book an assessment',
       highlights: ['Web', 'Mobile', 'API']
     },
     problems: {
-      title: 'Our quality engineering focus areas',
-      subtitle: 'From strategy to execution, we improve test maturity with practical steps.',
+      title: 'Quality is not a phase. It is a decision system.',
+      subtitle: 'Stronger engineering decisions earlier mean fewer incidents later.',
+      cta: 'See where we drive impact',
       items: [
         {
-          title: 'Test strategy and pyramid',
-          desc: 'We define coverage by layer (unit, integration, API, and E2E), risk criteria, and regression plans.'
+          title: 'Risk over raw coverage',
+          desc: 'We focus on what can hurt the business, not what is easiest to automate.'
         },
         {
-          title: 'Test automation',
-          desc: 'We implement sustainable automation for web, mobile, and API with reliable feedback loops.'
+          title: 'Signal quality over test count',
+          desc: 'Fewer brittle checks, stronger confidence at release time.'
         },
         {
-          title: 'Process improvement and CI/CD',
-          desc: 'We connect tests to delivery pipelines with quality gates, observability, and release metrics.'
+          title: 'Shared engineering ownership',
+          desc: 'Quality becomes a team habit, not a late-stage handoff.'
         }
       ]
     },
-    solution: {
-      title: 'Technical QA expertise across the full lifecycle',
-      subtitle: 'From risk discovery to automated pipeline checks, focused on real product outcomes.',
-      bullets: [
-        'Risk-based test strategy and planning',
-        'Structured manual exploratory and regression testing',
-        'Web, mobile, and API test automation',
-        'CI/CD integration with quality gates'
-      ]
-    },
     services: {
-      title: 'Specialized software quality services',
-      subtitle: 'We combine test engineering and operational improvement for safer, faster delivery.',
+      title: 'Where we usually step in',
+      subtitle: 'This is not a QA menu. We engage when quality becomes a growth constraint.',
+      cta: 'Evaluate my scenario',
       cards: [
         {
-          title: 'Manual and exploratory testing',
-          desc: 'Critical scenario design and execution, functional validation, and risk-oriented coverage.',
-          cta: 'Structure my testing'
+          title: 'Scaling product with rising regression',
+          desc: 'We reduce rework and restore release stability.'
         },
         {
-          title: 'Test automation',
-          desc: 'Framework design and implementation for web, mobile, and API with long-term reliability.',
-          cta: 'Automate my testing'
+          title: 'Fast release cadence with frequent rollbacks',
+          desc: 'We establish confidence gates so shipping stops feeling risky.'
         },
         {
-          title: 'QA process and CI/CD',
-          desc: 'Quality flow improvements with metrics, quality gates, and release standards.',
-          cta: 'Improve my process'
+          title: 'Distributed teams with inconsistent quality bar',
+          desc: 'We align technical criteria and validation flow across squads.'
         }
       ]
     },
     work: {
-      title: 'How we run QA projects',
-      subtitle: 'A practical, incremental approach aligned with your product technical context.',
+      title: 'How Raven Tech operates',
+      subtitle: 'Senior-led, direct, and focused on measurable outcomes.',
+      cta: 'Talk to a specialist',
       points: [
-        'Initial assessment of quality risks and bottlenecks',
-        'Improvement roadmap with short-term wins',
-        'Execution with knowledge transfer to your internal team',
-        'Continuous tracking with quality indicators'
-      ],
-      stats: [
-        { value: 'Web', label: 'E2E and component testing' },
-        { value: 'Mobile', label: 'Critical flows and regression' },
-        { value: 'API', label: 'Contract, integration, and load' }
-      ]
-    },
-    lead: {
-      title: 'Where we usually create the most impact',
-      subtitle: 'Common scenarios where we improve quality and release confidence.',
-      button: 'Assess my scenario',
-      disclaimer: 'We map your context and propose a QA action plan.',
-      cases: [
         {
-          client: 'Growing web product',
-          summary: 'Manual regression reduction through progressive automation of high-risk flows.'
+          title: 'Objective risk & bottleneck assessment',
+          desc: 'We identify technical, process, and release risks that directly impact production stability and delivery predictability.'
         },
         {
-          client: 'Mobile app with frequent releases',
-          summary: 'Structured test suite and release checklist to reduce production failures.'
+          title: '90-day execution plan with clear priorities',
+          desc: 'We define a focused 90-day roadmap with prioritized actions designed to reduce risk and improve delivery confidence without slowing the team.'
         },
         {
-          client: 'API-first platform',
-          summary: 'Contract and integration validation in pipelines to reduce service breakages.'
+          title: 'Embedded execution with no artificial dependency',
+          desc: 'We work alongside the team to build sustainable quality practices while transferring ownership and technical context from day one.'
+        },
+        {
+          title: 'Confidence metrics to track maturity',
+          desc: 'We establish quality and reliability metrics that support release decisions and continuous improvement over time.'
         }
       ]
     },
-    fit: {
-      goodTitle: 'Outcomes we target',
-      badTitle: 'When this is a strong fit',
-      good: [
-        'Fewer production incidents and more confidence in deployments.',
-        'Faster development feedback through useful and maintainable tests.'
-      ],
-      bad: [
-        'Teams that need to structure QA without slowing delivery speed.',
-        'Products requiring consistent coverage across web, mobile, and API.'
-      ]
-    },
     final: {
-      headline: 'Ready to improve your software quality?',
-      sub: 'Share your context and we will build a QA plan covering automation, process, and CI/CD for your product.',
+      headline: 'Let’s make delivery more predictable',
+      sub: 'Share your context and we will send an initial quality improvement plan.',
       cta: 'Request assessment',
-      calendlyPlaceholder: 'Initial reply within 1 business day',
+      calendlyPlaceholder: 'First response within 1 business day.',
+      calendly: {
+        button: 'Book a 30-min diagnostic call',
+        secondary: 'Prefer not to book a call now? Share your context in writing.',
+        modalTitle: 'Raven Tech Diagnostic Call (30 min)',
+        url: 'https://calendly.com'
+      },
+      backToTop: 'Back to top',
+      form: {
+        name: 'Name',
+        email: 'Email',
+        company: 'Company',
+        message: 'Current context and top quality risk'
+      },
+      labels: {
+        email: 'Email',
+        phone: 'Phone',
+        coverage: 'Coverage'
+      },
       details: {
-        email: 'contact@raventech.com',
-        phone: '+55 (21) 3000-0000',
-        location: 'Remote service across Brazil'
+        email: 'hello@ravenqe.io',
+        phone: '+55 11 98803-4411',
+        location: 'Remote-first delivery for global teams'
       }
     }
   }

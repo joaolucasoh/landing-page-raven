@@ -2,11 +2,8 @@ import React from 'react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Problem from './components/Problem'
-import Solution from './components/Solution'
 import Services from './components/Services'
 import HowWeWork from './components/HowWeWork'
-import LeadCapture from './components/LeadCapture'
-import Fit from './components/Fit'
 import FinalCTA from './components/FinalCTA'
 
 export default function App(){
@@ -15,14 +12,21 @@ export default function App(){
       <div className="page-glow" aria-hidden="true" />
       <Nav />
       <main>
-        <Hero />
-        <Problem />
-        <Solution />
-        <Services />
-        <HowWeWork />
-        <LeadCapture />
-        <Fit />
-        <FinalCTA />
+        <section id="hero-panel">
+          <Hero />
+        </section>
+        <section id="maturity-panel">
+          <Problem />
+        </section>
+        <section id="impact-panel">
+          <Services />
+        </section>
+        <section id="work-panel">
+          <HowWeWork />
+        </section>
+        <section id="contact-panel">
+          <FinalCTA />
+        </section>
       </main>
     </div>
   )

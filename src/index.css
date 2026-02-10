@@ -31,3 +31,7 @@ main, header {
   position: relative;
   z-index: 1;
 }
+
+section[id] {
+  scroll-margin-top: 110px;
+}

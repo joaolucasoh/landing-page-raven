@@ -7,32 +7,57 @@ export default function Services(){
   const cards = t('services.cards') || []
 
   return (
-    <section className="py-16 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-white">{t('services.title')}</h3>
-            <p className="mt-3 text-zinc-300">{t('services.subtitle')}</p>
-          </div>
+    <section id="impact" className="py-20 md:py-24 px-6">
+      <motion.div
+        className="max-w-6xl mx-auto text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.45 }}
+      >
+        <div>
+          <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight">{t('services.title')}</h3>
+          <p className="mt-5 text-zinc-300 max-w-3xl mx-auto">{t('services.subtitle')}</p>
         </div>
 
-        <div className="mt-10 grid md:grid-cols-3 gap-6">
-          {cards.map((c, i) => (
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 text-left">
+          {cards[0] && (
             <motion.article
-              key={i}
-              whileHover={{ y: -5 }}
-              transition={{ type: 'spring', stiffness: 260, damping: 18 }}
-              className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6"
+              initial={{ opacity: 0, x: 16 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.35 }}
+              transition={{ duration: 0.4 }}
+              className="border border-zinc-800/70 bg-zinc-950/50 rounded-xl p-6 md:p-7"
             >
-              <h4 className="text-xl font-semibold text-white">{c.title}</h4>
-              <p className="mt-3 text-zinc-400">{c.desc}</p>
-              <a href="#contact" className="mt-6 inline-flex text-raven-yellow font-semibold hover:text-raven-yellow-2 transition">
-                {c.cta} <span aria-hidden="true">&rarr;</span>
-              </a>
+              <h4 className="text-xl md:text-2xl font-semibold text-white leading-snug">{cards[0].title}</h4>
+              <p className="mt-3 text-zinc-400 leading-relaxed">{cards[0].desc}</p>
+            </motion.article>
+          )}
+
+          {cards.slice(1).map((c, i) => (
+            <motion.article
+              key={c.title}
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.35 }}
+              transition={{ duration: 0.4, delay: i * 0.07 }}
+              className="border border-zinc-800/60 bg-zinc-950/30 rounded-xl p-5"
+            >
+              <h4 className="text-lg font-semibold text-white leading-snug">{c.title}</h4>
+              <p className="mt-2.5 text-zinc-400 leading-relaxed text-sm">{c.desc}</p>
             </motion.article>
           ))}
         </div>
-      </div>
+
+        <div className="mt-10 flex justify-center">
+          <a
+            href="#contact-panel"
+            className="inline-flex items-center rounded-full bg-raven-yellow px-6 py-3 text-black font-semibold hover:bg-raven-yellow-2 transition"
+          >
+            {t('services.cta')}
+          </a>
+        </div>
+      </motion.div>
     </section>
   )
 }
