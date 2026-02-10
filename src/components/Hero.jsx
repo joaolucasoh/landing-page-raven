@@ -5,6 +5,9 @@ import { useI18n } from '../i18n/I18nProvider'
 export default function Hero(){
   const { t } = useI18n()
   const highlights = t('hero.highlights') || []
+  const scrollToPanel = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <section id="hero" className="pt-24 md:pt-28 pb-20 md:pb-24 px-6 lg:px-8">
@@ -27,18 +30,20 @@ export default function Hero(){
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="#contact-panel"
+            <button
+              type="button"
+              onClick={() => scrollToPanel('contact-panel')}
               className="inline-flex items-center rounded-full bg-raven-yellow px-6 py-3 text-black font-semibold hover:bg-raven-yellow-2 transition"
             >
               {t('hero.primaryCta')}
-            </a>
-            <a
-              href="#impact-panel"
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToPanel('impact-panel')}
               className="inline-flex items-center rounded-full border border-zinc-700 px-6 py-3 text-zinc-200 font-semibold hover:border-raven-yellow hover:text-raven-yellow transition"
             >
               {t('problems.cta')}
-            </a>
+            </button>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">

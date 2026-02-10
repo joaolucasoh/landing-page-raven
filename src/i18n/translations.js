@@ -4,6 +4,7 @@ const translations = {
       services: 'Maturidade',
       checklist: 'Impacto',
       work: 'Modelo',
+      contact: 'Contato',
       book: 'Agendar diagnóstico'
     },
     hero: {
@@ -109,6 +110,7 @@ const translations = {
       services: 'Maturity',
       checklist: 'Impact',
       work: 'Operating Model',
+      contact: 'Contact',
       book: 'Book an assessment'
     },
     hero: {
@@ -214,6 +216,7 @@ const translations = {
       services: 'Madurez',
       checklist: 'Impacto',
       work: 'Modelo',
+      contact: 'Contacto',
       book: 'Agendar diagnóstico'
     },
     hero: {

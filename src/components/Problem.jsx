@@ -5,6 +5,9 @@ import { useI18n } from '../i18n/I18nProvider'
 export default function Problem(){
   const { t } = useI18n()
   const items = t('problems.items') || []
+  const scrollToPanel = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <section id="maturity" className="py-20 md:py-24 px-6">
@@ -46,12 +49,13 @@ export default function Problem(){
         </div>
 
         <div className="mt-10 flex justify-center">
-          <a
-            href="#impact-panel"
+          <button
+            type="button"
+            onClick={() => scrollToPanel('impact-panel')}
             className="inline-flex items-center rounded-full bg-raven-yellow px-6 py-3 text-black font-semibold hover:bg-raven-yellow-2 transition"
           >
             {t('problems.cta')}
-          </a>
+          </button>
         </div>
       </motion.div>
     </section>

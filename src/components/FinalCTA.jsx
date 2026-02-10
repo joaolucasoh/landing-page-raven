@@ -76,9 +76,13 @@ export default function FinalCTA(){
         </div>
 
         <div className="mt-8">
-          <a href="#hero-panel" className="text-sm text-zinc-400 hover:text-raven-yellow transition">
+          <button
+            type="button"
+            onClick={() => document.getElementById('hero-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="text-sm text-zinc-400 hover:text-raven-yellow transition"
+          >
             {t('final.backToTop')}
-          </a>
+          </button>
         </div>
       </motion.div>
 
