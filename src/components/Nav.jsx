@@ -39,6 +39,14 @@ export default function Nav(){
           >
             🇬🇧
           </button>
+          <button
+            onClick={() => setLang('es')}
+            className={`text-lg leading-none px-2 py-1 rounded ${lang === 'es' ? 'bg-raven-yellow/65 text-black/90' : 'opacity-70 hover:opacity-100'}`}
+            aria-label="Español"
+            title="Español"
+          >
+            🇪🇸
+          </button>
           <a
             href="#contact-panel"
             className="hidden sm:inline-flex bg-raven-yellow hover:bg-raven-yellow-2 text-black rounded-full px-5 py-2.5 text-sm font-semibold transition"

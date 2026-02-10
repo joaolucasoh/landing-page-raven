@@ -83,7 +83,7 @@ const translations = {
         button: 'Agendar conversa (30 min)',
         secondary: 'Prefere não agendar uma call agora? Envie seu contexto por escrito.',
         modalTitle: 'Diagnóstico Raven Tech (30 min)',
-        url: 'https://calendly.com'
+        url: 'https://calendly.com/hello-ravenqe-29yu/30min'
       },
       backToTop: 'Voltar ao topo',
       form: {
@@ -188,7 +188,7 @@ const translations = {
         button: 'Book a 30-min diagnostic call',
         secondary: 'Prefer not to book a call now? Share your context in writing.',
         modalTitle: 'Raven Tech Diagnostic Call (30 min)',
-        url: 'https://calendly.com'
+        url: 'https://calendly.com/hello-ravenqe-29yu/30min'
       },
       backToTop: 'Back to top',
       form: {
@@ -206,6 +206,111 @@ const translations = {
         email: 'hello@ravenqe.io',
         phone: '+55 11 98803-4411',
         location: 'Remote-first delivery for global teams'
+      }
+    }
+  },
+  es: {
+    nav: {
+      services: 'Madurez',
+      checklist: 'Impacto',
+      work: 'Modelo',
+      book: 'Agendar diagnóstico'
+    },
+    hero: {
+      badge: 'Quality Engineering para equipos que ya entregan en producción',
+      headline: 'Menos riesgo en producción. Más previsibilidad en cada release.',
+      sub: 'Raven Tech estructura la calidad como un sistema continuo, desde la planificación hasta el deploy.',
+      primaryCta: 'Agendar diagnóstico',
+      highlights: ['Web', 'Mobile', 'API']
+    },
+    problems: {
+      title: 'La calidad no es una fase. Es un sistema de decisión.',
+      subtitle: 'Cuando la madurez sube, el equipo previene incidentes antes de que ocurran.',
+      cta: 'Ver dónde generamos impacto',
+      items: [
+        {
+          title: 'Riesgo antes que cobertura',
+          desc: 'Priorizamos lo que puede afectar al negocio, no solo lo más fácil de probar.'
+        },
+        {
+          title: 'Confiabilidad antes que volumen',
+          desc: 'Menos pruebas frágiles y señales más sólidas para aprobar releases con seguridad.'
+        },
+        {
+          title: 'Calidad como responsabilidad del equipo',
+          desc: 'La calidad deja de ser un cuello de botella aislado y se vuelve una práctica de ingeniería consistente.'
+        }
+      ]
+    },
+    services: {
+      title: 'Contextos en los que normalmente entramos',
+      subtitle: 'No operamos como un catálogo de QA. Entramos cuando la calidad se convierte en un límite para escalar.',
+      cta: 'Quiero evaluar mi escenario',
+      cards: [
+        {
+          title: 'Producto en escala con regresión creciente',
+          desc: 'Reducimos retrabajo y estabilizamos el ciclo de release con criterios más claros.'
+        },
+        {
+          title: 'Releases frecuentes con rollback recurrente',
+          desc: 'Creamos gates de confianza para publicar con menos sorpresas en producción.'
+        },
+        {
+          title: 'Equipos distribuidos sin estándar común',
+          desc: 'Alineamos criterios técnicos y flujo de validación entre squads.'
+        }
+      ]
+    },
+    work: {
+      title: 'Modelo de actuación de Raven Tech',
+      subtitle: 'Directo, senior y orientado a resultados medibles.',
+      cta: 'Hablar con un especialista',
+      points: [
+        {
+          title: 'Diagnóstico objetivo de riesgos y cuellos de botella',
+          desc: 'Mapeamos los principales riesgos técnicos y de proceso que impactan producción, priorizando lo que realmente afecta negocio y entrega.'
+        },
+        {
+          title: 'Plan de 90 días con prioridades claras',
+          desc: 'Definimos un roadmap compacto con acciones de corto plazo que generan impacto medible sin frenar el ritmo del equipo.'
+        },
+        {
+          title: 'Ejecución junto al equipo, sin dependencia artificial',
+          desc: 'Trabajamos lado a lado con el equipo, estructurando calidad de forma sostenible y transfiriendo conocimiento desde el inicio.'
+        },
+        {
+          title: 'Métricas de confianza para acompañar la evolución',
+          desc: 'Acompañamos la evolución de la calidad con indicadores claros que soportan decisiones de release y mejora continua.'
+        }
+      ]
+    },
+    final: {
+      headline: 'Hagamos tu entrega más predecible',
+      sub: 'Comparte tu contexto y te devolvemos un plan inicial de evolución de calidad.',
+      cta: 'Solicitar diagnóstico',
+      calendlyPlaceholder: 'Primera respuesta en hasta 1 día hábil.',
+      calendly: {
+        button: 'Agendar conversación (30 min)',
+        secondary: '¿Prefieres no agendar una llamada ahora? Envíanos tu contexto por escrito.',
+        modalTitle: 'Diagnóstico Raven Tech (30 min)',
+        url: 'https://calendly.com/hello-ravenqe-29yu/30min'
+      },
+      backToTop: 'Volver arriba',
+      form: {
+        name: 'Nombre',
+        email: 'Email',
+        company: 'Empresa',
+        message: 'Contexto actual y principal riesgo de calidad'
+      },
+      labels: {
+        email: 'Email',
+        phone: 'Teléfono',
+        coverage: 'Cobertura'
+      },
+      details: {
+        email: 'hello@ravenqe.io',
+        phone: '+55 11 98803-4411',
+        location: 'Atención remota para equipos distribuidos globalmente'
       }
     }
   }

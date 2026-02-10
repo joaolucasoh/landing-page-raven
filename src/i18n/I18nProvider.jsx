@@ -5,10 +5,17 @@ const I18nContext = createContext()
 
 export function I18nProvider({ children }){
   const defaultLang = typeof window !== 'undefined' ? (localStorage.getItem('raven_lang') || 'pt') : 'pt'
-  const [lang, setLang] = useState(defaultLang)
+  const safeDefaultLang = ['pt', 'en', 'es'].includes(defaultLang) ? defaultLang : 'pt'
+  const [lang, setLang] = useState(safeDefaultLang)
 
   useEffect(()=>{
     try { localStorage.setItem('raven_lang', lang) } catch(e){}
+  }, [lang])
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const map = { pt: 'pt-BR', en: 'en-US', es: 'es-419' }
+    document.documentElement.lang = map[lang] || 'pt-BR'
   }, [lang])
 
   const t = (path) => {
