@@ -17,11 +17,7 @@ export default function Hero(){
           animate={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.45, ease: 'easeOut' }}
         >
-          <div className="inline-flex items-center rounded-full border border-raven-yellow/35 bg-raven-yellow/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-raven-yellow">
-            {t('hero.badge')}
-          </div>
-
-          <h1 className="mt-6 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.96] text-white max-w-[18ch] sm:max-w-[20ch] lg:max-w-[22ch] mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.96] text-white max-w-[18ch] sm:max-w-[20ch] lg:max-w-[22ch] mx-auto text-center">
             {t('hero.headline')}
           </h1>
 
