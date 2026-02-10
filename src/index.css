@@ -35,3 +35,25 @@ main, header {
 section[id] {
   scroll-margin-top: 110px;
 }
+
+.client-marquee-track {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  width: max-content;
+  animation: client-marquee 40s linear infinite;
+}
+
+.client-marquee-card {
+  width: 280px;
+  flex: 0 0 auto;
+}
+
+@keyframes client-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
