@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Problem from './components/Problem'
 import Services from './components/Services'
 import HowWeWork from './components/HowWeWork'
+import ClientCarousel from './components/ClientCarousel'
 import FinalCTA from './components/FinalCTA'
 
 export default function App(){
@@ -23,6 +24,9 @@ export default function App(){
         </section>
         <section id="work-panel">
           <HowWeWork />
+        </section>
+        <section id="clients-panel">
+          <ClientCarousel />
         </section>
         <section id="contact-panel">
           <FinalCTA />

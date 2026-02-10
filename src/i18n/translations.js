@@ -75,6 +75,19 @@ const translations = {
         }
       ]
     },
+    clients: {
+      title: 'Empresas que já confiaram na Raven Tech',
+      subtitle: 'Alguns perfis de clientes que atendemos em iniciativas de qualidade e confiabilidade.',
+      items: [
+        { name: 'Starbucks', segment: 'Food & Beverage', logo: '/clients/starbucks.png' },
+        { name: 'Telus Digital', segment: 'Digital Services', logo: '/clients/logo-telus.svg' },
+        { name: 'Solaire Casino & Resort', segment: 'Hospitality & Gaming', logo: '/clients/solaire-logo.png', logoScale: 1.2 },
+        { name: 'Ticketmaster', segment: 'Ticketing & Events', logo: '/clients/logo-ticketmaster.svg', logoScale: 0.9 },
+        { name: 'ask.com', segment: 'Search & Media', logo: '/clients/logo-ask.png' },
+        { name: 'PWC', segment: 'Consulting & Advisory', logo: '/clients/logo-pwc.png' },
+        { name: 'Okta', segment: 'Identity & Security', logo: '/clients/logo-okta.png', logoScale: 0.8 }
+      ]
+    },
     final: {
       headline: 'Vamos tornar sua entrega mais previsível',
       sub: 'Compartilhe seu contexto e retornamos com um plano inicial de evolução de qualidade.',
@@ -181,6 +194,19 @@ const translations = {
         }
       ]
     },
+    clients: {
+      title: 'Teams that have trusted Raven Tech',
+      subtitle: 'A few client profiles we support across quality and reliability initiatives.',
+      items: [
+        { name: 'Starbucks', segment: 'Food & Beverage', logo: '/clients/starbucks.png' },
+        { name: 'Telus Digital', segment: 'Digital Services', logo: '/clients/logo-telus.svg' },
+        { name: 'Solaire Casino & Resort', segment: 'Hospitality & Gaming', logo: '/clients/solaire-logo.png', logoScale: 1.2 },
+        { name: 'Ticketmaster', segment: 'Ticketing & Events', logo: '/clients/logo-ticketmaster.svg', logoScale: 0.9 },
+        { name: 'ask.com', segment: 'Search & Media', logo: '/clients/logo-ask.png' },
+        { name: 'PWC', segment: 'Consulting & Advisory', logo: '/clients/logo-pwc.png' },
+        { name: 'Okta', segment: 'Identity & Security', logo: '/clients/logo-okta.png', logoScale: 0.8 }
+      ]
+    },
     final: {
       headline: 'Let’s make delivery more predictable',
       sub: 'Share your context and we will send an initial quality improvement plan.',
@@ -285,6 +311,19 @@ const translations = {
           title: 'Métricas de confianza para acompañar la evolución',
           desc: 'Acompañamos la evolución de la calidad con indicadores claros que soportan decisiones de release y mejora continua.'
         }
+      ]
+    },
+    clients: {
+      title: 'Empresas que ya confiaron en Raven Tech',
+      subtitle: 'Algunos perfiles de clientes que apoyamos en iniciativas de calidad y confiabilidad.',
+      items: [
+        { name: 'Starbucks', segment: 'Food & Beverage', logo: '/clients/starbucks.png' },
+        { name: 'Telus Digital', segment: 'Digital Services', logo: '/clients/logo-telus.svg' },
+        { name: 'Solaire Casino & Resort', segment: 'Hospitality & Gaming', logo: '/clients/solaire-logo.png', logoScale: 1.2 },
+        { name: 'Ticketmaster', segment: 'Ticketing & Events', logo: '/clients/logo-ticketmaster.svg', logoScale: 0.9 },
+        { name: 'ask.com', segment: 'Search & Media', logo: '/clients/logo-ask.png' },
+        { name: 'PWC', segment: 'Consulting & Advisory', logo: '/clients/logo-pwc.png' },
+        { name: 'Okta', segment: 'Identity & Security', logo: '/clients/logo-okta.png', logoScale: 0.8 }
       ]
     },
     final: {
